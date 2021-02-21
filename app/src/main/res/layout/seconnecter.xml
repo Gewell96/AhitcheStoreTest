@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seconnecter">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Se connecter en utilisant votre compte"
+        android:textColor="@color/colorNoir"
+        android:backgroundTint="@color/colorGris1"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorNoir"
+        android:backgroundTint="@color/colorGris1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/login_fc"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/no_tof"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+       />
+
+    <EditText
+        android:id="@+id/pseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorRed"
+        android:hint="Pseudo"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorRed"
+        android:gravity="center"
+        android:hint="Ex:90909090"
+        android:inputType="phone"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/send_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Envoyer un message" />
+
+        <EditText
+            android:id="@+id/code_auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorRed"
+            android:gravity="center"
+            android:hint="Entrez le code"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+        android:text="Se connecter via un compte Google"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+  <!--
+   -->
+  <com.facebook.login.widget.LoginButton
+        android:id="@+id/login"
+      android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

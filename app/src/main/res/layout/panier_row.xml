@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/idpand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="2dp"
+        android:textColor="@color/colorBlack"
+        />
+    <TextView
+        android:id="@+id/idprodp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="2dp"
+        android:textColor="@color/colorBlack"
+        />
+    <ImageView
+        android:layout_marginBottom="1dp"
+        android:id="@+id/img_pand"
+        android:layout_width="100px"
+        android:layout_marginLeft="10dp"
+        android:layout_height="100px"
+        android:src="@drawable/no_tof"
+        />
+    <TextView
+        android:id="@+id/deprod_pan"
+        android:layout_width="80dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorBlack"
+        android:text="Designation blablabla"/>
+
+    <TextView
+        android:id="@+id/qtdmd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="433"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/prixprod_pan"
+        android:layout_width="100dp"
+        android:textColor="@color/colorBlack"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="190000000"
+       />
+    
+    <TextView
+    android:id="@+id/imgpan"
+        android:layout_width="1dp"
+        android:gravity="center_vertical"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+
+        />
+        <TextView
+            android:id="@+id/poidprod"
+            android:layout_width="1dp"
+            android:gravity="center_vertical"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/colorBlack"
+        android:layout_height="1dp">
+    </LinearLayout>
+</LinearLayout>

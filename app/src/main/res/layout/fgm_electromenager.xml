@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGris2"
+    tools:context=".Electromenager">
+
+    <RelativeLayout
+        android:id="@+id/layoutcat"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_frigo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            app:shapeAppearanceOverlay="@style/roundimageview"
+         />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REFRIGERATEUR"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des categories"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/laypubvid"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:src="@drawable/img_tele"
+            android:background="@drawable/roundimgbkg"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:text="TELEVISION"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des videos postées"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/laypubimg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/climatiseur"
+            android:background="@drawable/roundimgbkg"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="CLIMATISEUR"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des images postées"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/laylave"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/roundimgbkg"
+            android:src="@drawable/img_laver"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="LAVE-LINGE"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des publications "
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layfer"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/img_ferep"
+            android:background="@drawable/roundimgbkg"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="FER A REPASSER"
+            android:textColor="@color/colorBlack"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des clients inscrits"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/laydiverelct"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="320dp"
+
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/roundimgbkg"
+            android:src="@drawable/img_tele"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="DIVERS"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des Autres"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80px"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:hint="Se connecter"
+        android:textSize="40px" />
+
+    <ImageView
+        android:id="@+id/imgCorners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/corners_white" />
+
+</RelativeLayout>

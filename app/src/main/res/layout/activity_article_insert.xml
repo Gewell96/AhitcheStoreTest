@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Articles.Article_insert">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+            <ImageView
+                android:id="@+id/image_art"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/images"
+                />
+
+            <EditText
+                android:id="@+id/et_deprod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_editext"
+                android:hint="Saisir la désignation de l'article"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+               />
+
+            <EditText
+                android:id="@+id/et_prixprod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:inputType=""
+                android:background="@drawable/rounded_editext"
+                android:hint="Le pris de l'article en F CFA"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+               />
+
+            <EditText
+                android:id="@+id/et_poidprod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:background="@drawable/rounded_editext"
+                android:hint="Saisir le poids de l'article en Kg"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+              />
+            <EditText
+                android:id="@+id/et_dimprod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:background="@drawable/rounded_editext"
+                android:hint="Saisir les dimenssions de l'article en cm ou m"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="@color/colorGris1"
+                android:background="@drawable/spin_bckgrd"
+                android:spinnerMode="dropdown"
+                android:id="@+id/idcatArt"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/save_art"
+                android:layout_margin="30dp"
+                android:text="Enregistrer"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/ed_idprod"
+                android:layout_width="2dp"
+                android:layout_height="2dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:visibility="invisible"
+                android:background="@drawable/rounded_editext"
+                />
+
+            <EditText
+                android:id="@+id/et_imgprod"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="1sp"
+                android:visibility="invisible"
+                android:background="@drawable/rounded_editext"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

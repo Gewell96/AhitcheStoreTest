@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorGris2"
+    tools:context=".Panier">
+    <LinearLayout
+        android:id="@+id/laytitre"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorGris1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="80dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/colorBlack"
+            android:text="Articles"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Qté"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Prix.Unit"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_panier"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_above="@+id/l1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panier_info"
+        android:backgroundTint="@color/colorGris1"
+        >
+        <EditText
+            android:id="@+id/villiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ville de livraison"
+            android:backgroundTint="@color/colorRed"
+            android:gravity="center" />
+
+
+        <ListView
+            android:id="@+id/villelist"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/villiv"
+            android:layout_alignLeft="@+id/villiv"
+            android:layout_alignStart="@+id/villiv" />
+        <EditText
+            android:id="@+id/qtrliv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quartier de livraison"
+            android:layout_above="@id/villiv"
+            android:backgroundTint="@color/colorRed"
+            android:gravity="center" />
+        <ListView
+            android:id="@+id/qtrlist"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/qtrliv"
+            android:layout_alignLeft="@+id/qtrliv"
+            android:layout_alignStart="@+id/qtrliv" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+
+        android:background="@drawable/panier_info"
+        android:backgroundTint="@color/colorBlack"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlanc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frais de livraison:"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorBlanc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net à payer:"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlanc"/>
+
+        <TextView
+            android:id="@+id/totalpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="400000 "
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlanc"/>
+        <TextView
+            android:id="@+id/mttransport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0 FCFA"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorBlanc"/>
+        <TextView
+            android:id="@+id/nappan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="500000 FCFA"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlanc"/>
+
+        <TextView
+            android:id="@+id/idqtr"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:id="@+id/tarifqtr"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:id="@+id/idvilleqtr"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:id="@+id/poidstot"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            />
+
+        <Button
+            android:id="@+id/btncmder"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorRed"
+            android:background="@drawable/rounded_editext"
+            android:text="Commander"
+            android:textColor="@color/colorNoir"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

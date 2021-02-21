@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:hint="Entrer le nom du quartier"
+        android:id="@+id/dnomqtr"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:hint="Entrer le tarif"
+        android:id="@+id/dtarif"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/colorGris1"
+        android:background="@drawable/spin_bckgrd"
+        android:spinnerMode="dropdown"
+        android:id="@+id/sp_idville"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnqtrsave"
+        android:layout_margin="30dp"
+        android:text="Enregistrer"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Partenaires.Partenaire_update"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+            <ImageView
+                android:id="@+id/image_art"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/images"
+                />
+
+            <EditText
+                android:id="@+id/ed_idpartm"
+                android:layout_marginTop="20dp"
+                android:layout_width="2dp"
+                android:layout_height="2dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_editext"
+                />
+            <EditText
+                android:id="@+id/et_deparmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_editext"
+                android:hint="Saisir votre dénomination "
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/sp_villpartm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/spin_bckgrd"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/colorBlanc"
+                />
+
+            <EditText
+                android:id="@+id/et_quapartm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:hint="Saisir le quartier"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_editext"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+            <Spinner
+                android:id="@+id/sp_raispartm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/spin_bckgrd"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/colorBlanc"
+                />
+
+            <EditText
+                android:id="@+id/et_emailpartm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:inputType="text"
+                android:background="@drawable/rounded_editext"
+                android:hint="Saisir votre e-mail"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <EditText
+                android:id="@+id/et_telpartm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:inputType="date"
+                android:background="@drawable/rounded_editext"
+                android:hint="01/01/2020"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <Spinner
+                android:id="@+id/et_houvertm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/spin_bckgrd"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/colorBlanc"
+                />
+
+            <Spinner
+                android:id="@+id/et_hfermem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/spin_bckgrd"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/colorBlanc" />
+
+            <Button
+                android:id="@+id/update_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Modifier"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

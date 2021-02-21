@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorGris2"
+    tools:context=".Frm_restauration">
+
+
+
+    <RelativeLayout
+        android:id="@+id/layptitdej"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ptidej"
+            android:background="@drawable/roundimgbkg"
+            android:scrollbarSize="10dp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PETIT DEJEUNER"
+            android:textColor="@color/colorBlanc"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des categories"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/laypat"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/patisserie"
+            android:background="@drawable/roundimgbkg"
+            android:paddingTop="1dp"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:text="PATISSERIE"
+            android:gravity="center"
+            android:textColor="@color/colorBlanc"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des videos postées"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/laymatafric"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/metaf"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundimgbkg"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="METS AFRICAINS"
+            android:textColor="@color/colorBlanc"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des images postées"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/laymeteurop"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/meteuro1"
+            android:background="@drawable/roundimgbkg"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlanc"
+            android:text="METS EUROPEENS"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des publications "
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/laymetBEN"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/man1"
+            android:background="@drawable/roundimgbkg"
+            android:paddingTop="1dp"
+            android:scrollbarSize="10dp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:text="METS BENINOIS"
+            android:gravity="center"
+            android:textColor="@color/colorBlanc"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:text="Retrouver ici la liste des clients inscrits"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layBOIS"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/img_tele"
+            android:background="@drawable/roundimgbkg"
+            android:scrollbarSize="10dp"/>/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:text="BOISSONS"
+            android:gravity="center"
+            android:textColor="@color/colorBlanc"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Retrouver ici la liste des Autres"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

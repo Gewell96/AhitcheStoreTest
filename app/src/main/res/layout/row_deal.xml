@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@drawable/roundimgbkg"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/gridviewdata"
+        android:layout_width="190dp"
+        android:background="@drawable/roundimgbkg"
+        android:backgroundTint="@color/colorGris1"
+        android:layout_margin="10dp"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/vimgdeal"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textColor="#000" />
+        <TextView
+            android:id="@+id/vdatdeal"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:textColor="#000" />
+        <TextView
+            android:id="@+id/vprixdeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:textColor="#000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/vtitdeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/txtprixprod"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal|italic"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/imgdeal"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            />
+
+        <TextView
+            android:id="@+id/viddeal"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="visible"
+
+            />
+        <TextView
+            android:id="@+id/vlocdeal"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="visible"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
